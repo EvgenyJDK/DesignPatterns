@@ -13,6 +13,7 @@
 		C3D5974C1EF9B23600202F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D5974B1EF9B23600202F11 /* Assets.xcassets */; };
 		C3D5974F1EF9B23600202F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5974D1EF9B23600202F11 /* LaunchScreen.storyboard */; };
 		C3D5975A1EF9B23600202F11 /* DesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597591EF9B23600202F11 /* DesignPatternsTests.swift */; };
+		C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597651EF9B29000202F11 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C3D597551EF9B23600202F11 /* DesignPatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D597591EF9B23600202F11 /* DesignPatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsTests.swift; sourceTree = "<group>"; };
 		C3D5975B1EF9B23600202F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D597651EF9B29000202F11 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C3D597431EF9B23600202F11 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				C3D597641EF9B27D00202F11 /* API */,
 				C3D597441EF9B23600202F11 /* AppDelegate.swift */,
 				C3D597461EF9B23600202F11 /* ViewController.swift */,
 				C3D597481EF9B23600202F11 /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				C3D5975B1EF9B23600202F11 /* Info.plist */,
 			);
 			path = DesignPatternsTests;
+			sourceTree = "<group>";
+		};
+		C3D597641EF9B27D00202F11 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C3D597651EF9B29000202F11 /* HTTPClient.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			files = (
 				C3D597471EF9B23600202F11 /* ViewController.swift in Sources */,
 				C3D597451EF9B23600202F11 /* AppDelegate.swift in Sources */,
+				C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
