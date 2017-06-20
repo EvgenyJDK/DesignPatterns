@@ -14,6 +14,8 @@
 		C3D5974F1EF9B23600202F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5974D1EF9B23600202F11 /* LaunchScreen.storyboard */; };
 		C3D5975A1EF9B23600202F11 /* DesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597591EF9B23600202F11 /* DesignPatternsTests.swift */; };
 		C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597651EF9B29000202F11 /* HTTPClient.swift */; };
+		C3D597681EF9CA6100202F11 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597671EF9CA6100202F11 /* Album.swift */; };
+		C3D5976A1EF9CB4F00202F11 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597691EF9CB4F00202F11 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		C3D597591EF9B23600202F11 /* DesignPatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsTests.swift; sourceTree = "<group>"; };
 		C3D5975B1EF9B23600202F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D597651EF9B29000202F11 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		C3D597671EF9CA6100202F11 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C3D597691EF9CB4F00202F11 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumView.swift; path = ../AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				C3D597641EF9B27D00202F11 /* API */,
+				C3D597671EF9CA6100202F11 /* Album.swift */,
+				C3D597691EF9CB4F00202F11 /* AlbumView.swift */,
 				C3D597441EF9B23600202F11 /* AppDelegate.swift */,
 				C3D597461EF9B23600202F11 /* ViewController.swift */,
 				C3D597481EF9B23600202F11 /* Main.storyboard */,
@@ -211,6 +217,8 @@
 				C3D597471EF9B23600202F11 /* ViewController.swift in Sources */,
 				C3D597451EF9B23600202F11 /* AppDelegate.swift in Sources */,
 				C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */,
+				C3D5976A1EF9CB4F00202F11 /* AlbumView.swift in Sources */,
+				C3D597681EF9CA6100202F11 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
