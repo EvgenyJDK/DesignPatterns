@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				C3D597641EF9B27D00202F11 /* API */,
-				C3D597671EF9CA6100202F11 /* Album.swift */,
-				C3D597691EF9CB4F00202F11 /* AlbumView.swift */,
+				C3D5976B1EF9CD9900202F11 /* Model */,
+				C3D5976C1EF9CDA000202F11 /* View */,
 				C3D597441EF9B23600202F11 /* AppDelegate.swift */,
 				C3D597461EF9B23600202F11 /* ViewController.swift */,
 				C3D597481EF9B23600202F11 /* Main.storyboard */,
@@ -111,6 +111,22 @@
 				C3D597651EF9B29000202F11 /* HTTPClient.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		C3D5976B1EF9CD9900202F11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3D597671EF9CA6100202F11 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C3D5976C1EF9CDA000202F11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3D597691EF9CB4F00202F11 /* AlbumView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
