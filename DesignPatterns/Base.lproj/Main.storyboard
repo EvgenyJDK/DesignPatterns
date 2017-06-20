@@ -92,7 +92,7 @@
                     <navigationItem key="navigationItem" title="Pop Music" id="dPd-Zv-mjl"/>
                     <connections>
                         <outlet property="dataTable" destination="IRz-sH-XcZ" id="URK-SK-pWs"/>
-                        <outlet property="toolBar" destination="qje-Fn-ZDq" id="8fz-WZ-aR8"/>
+                        <outlet property="toolbar" destination="qje-Fn-ZDq" id="JWr-bs-mvi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,6 +16,8 @@
 		C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597651EF9B29000202F11 /* HTTPClient.swift */; };
 		C3D597681EF9CA6100202F11 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597671EF9CA6100202F11 /* Album.swift */; };
 		C3D5976A1EF9CB4F00202F11 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597691EF9CB4F00202F11 /* AlbumView.swift */; };
+		C3D5976F1EF9D2D200202F11 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5976E1EF9D2D200202F11 /* LibraryAPI.swift */; };
+		C3D597711EF9D3E200202F11 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597701EF9D3E200202F11 /* PersistencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		C3D597651EF9B29000202F11 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		C3D597671EF9CA6100202F11 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		C3D597691EF9CB4F00202F11 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumView.swift; path = ../AlbumView.swift; sourceTree = "<group>"; };
+		C3D5976E1EF9D2D200202F11 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		C3D597701EF9D3E200202F11 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,8 @@
 				C3D597641EF9B27D00202F11 /* API */,
 				C3D5976B1EF9CD9900202F11 /* Model */,
 				C3D5976C1EF9CDA000202F11 /* View */,
+				C3D5976D1EF9D0D300202F11 /* Controller */,
 				C3D597441EF9B23600202F11 /* AppDelegate.swift */,
-				C3D597461EF9B23600202F11 /* ViewController.swift */,
 				C3D597481EF9B23600202F11 /* Main.storyboard */,
 				C3D5974B1EF9B23600202F11 /* Assets.xcassets */,
 				C3D5974D1EF9B23600202F11 /* LaunchScreen.storyboard */,
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				C3D597651EF9B29000202F11 /* HTTPClient.swift */,
+				C3D5976E1EF9D2D200202F11 /* LibraryAPI.swift */,
+				C3D597701EF9D3E200202F11 /* PersistencyManager.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -127,6 +133,14 @@
 				C3D597691EF9CB4F00202F11 /* AlbumView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C3D5976D1EF9D0D300202F11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3D597461EF9B23600202F11 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +246,11 @@
 			files = (
 				C3D597471EF9B23600202F11 /* ViewController.swift in Sources */,
 				C3D597451EF9B23600202F11 /* AppDelegate.swift in Sources */,
+				C3D5976F1EF9D2D200202F11 /* LibraryAPI.swift in Sources */,
 				C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */,
 				C3D5976A1EF9CB4F00202F11 /* AlbumView.swift in Sources */,
 				C3D597681EF9CA6100202F11 /* Album.swift in Sources */,
+				C3D597711EF9D3E200202F11 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
