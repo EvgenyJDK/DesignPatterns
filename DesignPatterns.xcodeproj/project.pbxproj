@@ -18,6 +18,7 @@
 		C3D5976A1EF9CB4F00202F11 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597691EF9CB4F00202F11 /* AlbumView.swift */; };
 		C3D5976F1EF9D2D200202F11 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5976E1EF9D2D200202F11 /* LibraryAPI.swift */; };
 		C3D597711EF9D3E200202F11 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597701EF9D3E200202F11 /* PersistencyManager.swift */; };
+		C3D597731EFA43C200202F11 /* AlbumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D597721EFA43C200202F11 /* AlbumExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C3D597691EF9CB4F00202F11 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumView.swift; path = ../AlbumView.swift; sourceTree = "<group>"; };
 		C3D5976E1EF9D2D200202F11 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		C3D597701EF9D3E200202F11 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		C3D597721EFA43C200202F11 /* AlbumExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C3D597671EF9CA6100202F11 /* Album.swift */,
+				C3D597721EFA43C200202F11 /* AlbumExtensions.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D597471EF9B23600202F11 /* ViewController.swift in Sources */,
+				C3D597731EFA43C200202F11 /* AlbumExtensions.swift in Sources */,
 				C3D597451EF9B23600202F11 /* AppDelegate.swift in Sources */,
 				C3D5976F1EF9D2D200202F11 /* LibraryAPI.swift in Sources */,
 				C3D597661EF9B29000202F11 /* HTTPClient.swift in Sources */,
