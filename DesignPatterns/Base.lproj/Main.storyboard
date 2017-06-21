@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0U1-2A-aZf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0U1-2A-aZf" customClass="HorizontalScroller" customModule="DesignPatterns" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="600" height="120"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -94,6 +94,7 @@
                     <navigationItem key="navigationItem" title="Pop Music" id="dPd-Zv-mjl"/>
                     <connections>
                         <outlet property="dataTable" destination="IRz-sH-XcZ" id="URK-SK-pWs"/>
+                        <outlet property="scroller" destination="0U1-2A-aZf" id="Hp2-Ym-nvI"/>
                         <outlet property="toolbar" destination="qje-Fn-ZDq" id="JWr-bs-mvi"/>
                     </connections>
                 </viewController>
