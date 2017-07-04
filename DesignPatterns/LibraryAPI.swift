@@ -8,6 +8,7 @@
 
 //import Cocoa
 import Foundation
+import UIKit
 
 
 class LibraryAPI: NSObject {
@@ -37,12 +38,13 @@ class LibraryAPI: NSObject {
         
         super.init()
         
+/* Subscribe/Register as an observer on Notifications */
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"downloadImage:", name: "BLDownloadImageNotification", object: nil)
         
         
     }
     
-    
+/* Unsubscribe */
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
@@ -69,7 +71,37 @@ class LibraryAPI: NSObject {
     
     
 
-    
-    
-    
+    func downloadImage(notification: NSNotification) {
+        //1
+        let userInfo = notification.userInfo as! [String: AnyObject]
+        let imageView = userInfo["imageView"] as! UIImageView?
+        let coverUrl = userInfo["coverUrl"] as! String
+        
+        //2
+        if let imageViewUnWrapped = imageView {
+            imageViewUnWrapped.image = persistencyManager.getImage(coverUrl.lastPathComponent)
+            if imageViewUnWrapped.image == nil {
+                //3
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+                    let downloadedImage = self.httpClient.downloadImage(coverUrl as String)
+                    //4
+                    dispatch_sync(dispatch_get_main_queue(), { () -> Void in
+                        imageViewUnWrapped.image = downloadedImage
+                        self.persistencyManager.saveImage(downloadedImage, filename: coverUrl.lastPathComponent)
+                    })
+                })
+            }
+        }
+    }
+   
+}
+
+
+
+extension String {
+    var lastPathComponent: String {
+        get {
+            return (self as NSString).lastPathComponent
+        }
+    }
 }
